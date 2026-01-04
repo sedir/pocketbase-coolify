@@ -8,7 +8,8 @@ RUN apk add --no-cache \
   unzip \
   ca-certificates \
   curl \
-  wget
+  wget \
+  vim
 
 ADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_${BUILDARCH}.zip /tmp/pb.zip
 
