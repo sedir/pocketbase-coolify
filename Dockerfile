@@ -14,6 +14,8 @@ ADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/po
 RUN unzip /tmp/pb.zip -d /app/
 RUN rm /tmp/pb.zip
 
+WORKDIR /app
+
 EXPOSE 8080
 
 # Add healthcheck
